@@ -1,0 +1,12 @@
+profiles:
+  - 'git://Intl-Architecture-Developer-Tools:stage-gates:master:stage-gates'
+
+build:
+  preBuild:
+    - concord:
+        name: API Linter
+        enabled: true
+        arguments:
+          config:
+            apiLinting:
+              mode: Passive
